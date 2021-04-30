@@ -1,34 +1,28 @@
-import React from 'react'
-import ReactDom from 'react-dom'
-import "./index.css"
+import React from 'react';
+import ReactDOM from 'react-dom';
+import "./index.css";
+let time=""
+const cssStyle ={
+}
+ let ct=new Date();
+ct=ct.getHours();
+if(ct>=1 && ct<=12){
+  time="Good Morningggg"
+}
+else if(ct>12 && ct<=19){
+  time="GoodAfternoon"
+  cssStyle.color="orange"
+}
+else{
+  time="Good Night"
+  cssStyle.color="red"
+}
 
-const name="Mehul Porwal"
-const cd=new Date().toLocaleDateString();
-const ct=new Date().toLocaleTimeString();
-const img1="https://picsum.photos/300/250"
-const img3="https://picsum.photos/250/250"
-const img2="https://picsum.photos/350/250"
-
-
-// how to add inline css text-transform should be textTransform
-
-const heading ={
-  color:'#fa9191',
-  fontWeight:'bold',
-  textTransform:'capatalize'
-};
-
-ReactDom.render(
+ReactDOM.render(
   <>
-  <h1 style={heading} >Hello guys this is {name}</h1>
-  <p className="para">Current Date is={cd}</p>
-  <p  className="para">Current Time is ={ct}</p>
-  <div className="img_div">
-  <img src= {img1} alt="random images"></img>
-  <img src= {img2} alt="random images"></img>
-  <img src= {img3} alt="random images"></img>
+  <div>
+  <h1>Hello Sir,<span style={cssStyle}>{time}</span></h1>
   </div>
-  <a href="https://groww.in/stocks/jsw-steel-ltd">THis is the link</a>
-  </>
-  ,document.getElementById('root')
+  </>,
+  document.getElementById('root')
 )
