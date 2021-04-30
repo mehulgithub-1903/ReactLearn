@@ -1,8 +1,7 @@
-
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
 body{
-  background-color: white;
+  background-color: aqua;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -47,7 +46,6 @@ h1{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

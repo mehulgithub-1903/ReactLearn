@@ -1,17 +1,11 @@
 import React from 'react'
-import Heading from './Heading.jsx'
-import List from './List.jsx'
-import Para from './Para.jsx'
 
-function App(){
-    return (
-     <>
-        <Heading/>
-        <Para/>
-        <List/>
-        
-     </>
-    );
+import Greeting from './Greeting.jsx'
+
+function App() {
+    return(<Greeting/>);
+
+
 }
 
 export default App;
