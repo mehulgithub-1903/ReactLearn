@@ -2,10 +2,13 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
 body{
-  background-color: greenyellow;
+  background-color: white;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+list{
+  color: red
 }
 div{
   margin-top: 100px;
