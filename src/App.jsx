@@ -1,9 +1,17 @@
 import React from 'react'
 
-import Greeting from './Greeting.jsx'
+import * as List /*name, {surname,myName}*/ from './Dummy.jsx'
 
 function App() {
-    return(<Greeting/>);
+    return(
+    <>
+    <p>
+        { List.default} 
+        { List.surname} 
+        { List.myName()}
+    </p>
+    </>
+    );
 
 
 }
