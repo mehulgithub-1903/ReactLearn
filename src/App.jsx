@@ -1,12 +1,7 @@
 import React from 'react'
 
-import Add from './Add.jsx';
 
-import Sub from './Sub.jsx';
-
-import Multiply from './Multiply.jsx';
-
-import Division from './Divide.jsx';
+import {Add,Sub,Division,Multiply} from './Calculator.jsx'
 
 function App() {
     return (
