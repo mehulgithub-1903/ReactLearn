@@ -29,6 +29,13 @@ const Sdata=[
         sname:"Big Bang Theory",
         link:"https://www.netflix.com/in/title/70143830"
     },
+    {
+        imgsrc:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcuoDPrzVAil5G_-m9dSlhpgaNmztIijparQ&usqp=CAU",
+        title:"A Netflix original",
+        sname:"Dark",
+        link:"https://www.netflix.com/in/title/80100172"
+        },
+        
 ]
 
 export default Sdata;

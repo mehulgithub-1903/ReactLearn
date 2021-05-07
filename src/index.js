@@ -8,40 +8,33 @@ const x={
     color: 'red',
     backgroundColor: 'green'
 };
+
+// function ncard(x){
+//  return(
+//     <Card 
+//      imgsrc={x.imgsrc}
+//      title={x.title}
+//      sname={x.sname}
+//      link={x.link}
+//  />
+//  )
+// }
+
 ReactDOM.render(<> 
 <h1>
     List Of Top 5 Netflix Series
 </h1>
-<Card 
-   style={x}
-    imgsrc={Sdata[0].imgsrc}
-    title={Sdata[0].title}
-    sname={Sdata[0].sname}
-    link={Sdata[0].link}
-/>
-<Card
-    imgsrc={Sdata[1].imgsrc}
-    title={Sdata[1].title}
-    sname={Sdata[1].sname}
-    link={Sdata[1].link}
-/>
-<Card imgsrc={Sdata[2].imgsrc}
-    title={Sdata[2].title}
-    sname={Sdata[2].sname}
-    link={Sdata[2].link}/>
-<Card 
-    imgsrc={Sdata[3].imgsrc}
-    title={Sdata[3].title}
-    sname={Sdata[3].sname}
-    link={Sdata[3].link}
+{Sdata.map(x=>{
+    return(
+        <Card 
+     imgsrc={x.imgsrc}
+     title={x.title}
+     sname={x.sname}
+     link={x.link}
+ />
+    );
+})}
 
-/>
-<Card 
-    imgsrc={Sdata[4].imgsrc}
-    title={Sdata[4].title}
-    sname={Sdata[4].sname}
-    link={Sdata[4].link}
 
-/>
 
 </>,document.getElementById('root'));
