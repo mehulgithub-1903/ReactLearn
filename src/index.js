@@ -1,30 +1,46 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import "./index.css";
-
+import Sdata from './Sdata'
 import Card from './Cards';
 
+const x={
+    color: 'red',
+    backgroundColor: 'green'
+};
 ReactDOM.render(<> 
-<Card imgsrc="https://fsa.zobj.net/crop.php?r=DUIVuL0OaIqj1Hu7N6nyUR_dGmY6fd-vRHFTJds_vabgSDeKyVuU95KNRIia9_yr8AWlIBJpgliOscW1jf-KomvCHRIyvqKDA5v__BxuLLHbcPWhPkBEqHP4yX6oFg2TB2KtziT9s-ieDYJa"
-    title="A Netflix original"
-    sname="Dark"
-    link="https://www.netflix.com/in/title/80100172"
+<h1>
+    List Of Top 5 Netflix Series
+</h1>
+<Card 
+   style={x}
+    imgsrc={Sdata[0].imgsrc}
+    title={Sdata[0].title}
+    sname={Sdata[0].sname}
+    link={Sdata[0].link}
 />
 <Card
-     imgsrc="https://fsa.zobj.net/crop.php?r=DUIVuL0OaIqj1Hu7N6nyUR_dGmY6fd-vRHFTJds_vabgSDeKyVuU95KNRIia9_yr8AWlIBJpgliOscW1jf-KomvCHRIyvqKDA5v__BxuLLHbcPWhPkBEqHP4yX6oFg2TB2KtziT9s-ieDYJa"
-    title="A Netflix original"
-    sname="D2"
-    link="https://www.netflix.com/in/title/80100172"
+    imgsrc={Sdata[1].imgsrc}
+    title={Sdata[1].title}
+    sname={Sdata[1].sname}
+    link={Sdata[1].link}
 />
-<Card imgsrc="https://fsa.zobj.net/crop.php?r=DUIVuL0OaIqj1Hu7N6nyUR_dGmY6fd-vRHFTJds_vabgSDeKyVuU95KNRIia9_yr8AWlIBJpgliOscW1jf-KomvCHRIyvqKDA5v__BxuLLHbcPWhPkBEqHP4yX6oFg2TB2KtziT9s-ieDYJa"
-    title="A Netflix original"
-    sname="Expo"
-    link="https://www.netflix.com/in/title/80100173"/>
+<Card imgsrc={Sdata[2].imgsrc}
+    title={Sdata[2].title}
+    sname={Sdata[2].sname}
+    link={Sdata[2].link}/>
 <Card 
-    imgsrc="https://fsa.zobj.net/crop.php?r=DUIVuL0OaIqj1Hu7N6nyUR_dGmY6fd-vRHFTJds_vabgSDeKyVuU95KNRIia9_yr8AWlIBJpgliOscW1jf-KomvCHRIyvqKDA5v__BxuLLHbcPWhPkBEqHP4yX6oFg2TB2KtziT9s-ieDYJa"
-    title="A Netflix original"
-    sname="Stranger Things"
-    link="https://www.netflix.com/in/title/80100171"
+    imgsrc={Sdata[3].imgsrc}
+    title={Sdata[3].title}
+    sname={Sdata[3].sname}
+    link={Sdata[3].link}
+
+/>
+<Card 
+    imgsrc={Sdata[4].imgsrc}
+    title={Sdata[4].title}
+    sname={Sdata[4].sname}
+    link={Sdata[4].link}
 
 />
 
