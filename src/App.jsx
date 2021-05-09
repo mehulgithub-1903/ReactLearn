@@ -1,61 +1,33 @@
-import React from 'react';
+import React from 'react'
+import './index.css'
 
-// import Sdata from './Sdata'
-// import Card from './Cards';
-import Netflix from './Netflix'
-import Amazon from './Amazon'
+import Slot from './SlotMachine'
+import {win} from './SlotMachine'
 
+const Congo=()=>{
+    if(win>=2){
+        return (<>
+            <h1> SLot Jackpot</h1>
+        </>)
+    }
+    else{
+        return (<>
+            <h1> SLot Jackpot Lose</h1>
+        </>)
+    }
+}
 
-// function ncard(x){
-//  return(
-//     <Card 
-//      imgsrc={x.imgsrc}
-//      title={x.title}
-//      sname={x.sname}
-//      link={x.link}
-//  />
-//  )
-// }
-
-const fav="amazon"
-
-// const Favs=()=>{
-
-
-//     return fav=="netflix"?<Netflix/>:<Amazon/>
-//     // if(fav=="netflix"){
-//     //     return(
-//     //       <Netflix/>
-//     //     )
-//     // }else if(fav=="amazon"){
-//     //     return(
-//     //        <Amazon/>
-//     //     )  
-//     // }
-// }
-
-const App=()=>{
-    return(<>
-<h1>
-    List Of Top 5 Netflix Series
-</h1>
-{fav=="netfix"?<Netflix/>:<Amazon/>}
-{/* <Favs></Favs> */}
-{/* {Sdata.map(x=>{
-    return(
-        <Card 
-        key={x.id}
-     imgsrc={x.imgsrc}
-     title={x.title}
-     sname={x.sname}
-     link={x.link}
- />
-    );
-})} */}
+const App=()=>{ 
+    return(<> 
+    <div className="Slot_M">
+    <h2 className="head_Style"> 🌎 Welcome to Slot Machnine 🌎  </h2>
+        <Slot x='🙂' y='🙂' z='🙂'/>
+        <Slot x='🎼' y='🎼' z='🎼' />
+        <Slot  x='🏊' y='🏊' z='🙂'/>
+        <Congo/>
+    </div>
     </>)
 }
 
 
-
-
-export default App
+export default App;

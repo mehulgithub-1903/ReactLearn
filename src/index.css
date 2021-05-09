@@ -1,5 +1,5 @@
 
-body{
+/* body{
   background-color: black;
 }
 h1{
@@ -37,8 +37,12 @@ button{
   
   border:1px solid black;
   cursor: pointer;
-}
+} */
 
+Slot_M{
+  display: flex;
+  justify-content:center;
+}
 
 /* body {
   margin: 0;
