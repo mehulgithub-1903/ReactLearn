@@ -1,8 +1,9 @@
 import React from 'react';
 
-import Sdata from './Sdata'
-import Card from './Cards';
-
+// import Sdata from './Sdata'
+// import Card from './Cards';
+import Netflix from './Netflix'
+import Amazon from './Amazon'
 
 
 // function ncard(x){
@@ -15,12 +16,32 @@ import Card from './Cards';
 //  />
 //  )
 // }
+
+const fav="amazon"
+
+// const Favs=()=>{
+
+
+//     return fav=="netflix"?<Netflix/>:<Amazon/>
+//     // if(fav=="netflix"){
+//     //     return(
+//     //       <Netflix/>
+//     //     )
+//     // }else if(fav=="amazon"){
+//     //     return(
+//     //        <Amazon/>
+//     //     )  
+//     // }
+// }
+
 const App=()=>{
     return(<>
 <h1>
     List Of Top 5 Netflix Series
 </h1>
-{Sdata.map(x=>{
+{fav=="netfix"?<Netflix/>:<Amazon/>}
+{/* <Favs></Favs> */}
+{/* {Sdata.map(x=>{
     return(
         <Card 
         key={x.id}
@@ -30,7 +51,7 @@ const App=()=>{
      link={x.link}
  />
     );
-})}
+})} */}
     </>)
 }
 

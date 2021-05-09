@@ -11,7 +11,7 @@ const Sdata=[
     {
         id:2,
         imgsrc:"https://m.media-amazon.com/images/M/MV5BN2ZmYjg1YmItNWQ4OC00YWM0LWE0ZDktYThjOTZiZjhhN2Q2XkEyXkFqcGdeQXVyNjgxNTQ3Mjk@._V1_.jpg",
-    title:"A Netflix original",
+    title:"Amazon Originals",
     sname:"Stranger Things",
     link:"https://www.netflix.com/in/title/80057281"
     },
