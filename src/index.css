@@ -2,12 +2,7 @@
 /* body{
   background-color: black;
 }
-h1{
-  color: white;
-  display:flex;
-  justify-content: center;
-}
-.card{
+h1{s
   padding: 5px;
   border-radius: 10px;
   float:left;
@@ -24,25 +19,26 @@ h1{
   height: 275px;
   width: 300px;
 }
+*/
 button{
-  padding: 5px 8px;
+  padding: 15px 20px;
   font-family: "Raleway",sans-serif;
   text-transform: uppercase;
   font-size: 12px;
   letter-spacing: 2px;
-  border-radius: 10px;
+  border-radius: 2px solid yellow;
   font-weight: 500px;
   background-color:blue;
   color:white;
   
   border:1px solid black;
   cursor: pointer;
-} */
+} 
 
-Slot_M{
+/* Slot_M{
   display: flex;
   justify-content:center;
-}
+} */
 
 /* body {
   margin: 0;
