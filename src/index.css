@@ -20,7 +20,16 @@ h1{s
   width: 300px;
 }
 */
-button{
+.hstyle{
+  margin: 20px;
+  width: 45%;
+  background-color : blue;
+  border: 1px solid yellowgreen;
+  border-radius:5px;
+  display: flex;  
+  justify-content: center;
+}
+/* button{
   padding: 15px 20px;
   font-family: "Raleway",sans-serif;
   text-transform: uppercase;
@@ -33,7 +42,7 @@ button{
   
   border:1px solid black;
   cursor: pointer;
-} 
+}  */
 
 /* Slot_M{
   display: flex;
