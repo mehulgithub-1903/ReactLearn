@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 
 
-import UseStateObjects from './components/UseStateObjects'
+import UseStateArray from './components/UseStateArray'
 
 
 const App =()=>{
@@ -17,7 +17,7 @@ const App =()=>{
     
     return(
         <>
-        <UseStateObjects></UseStateObjects>
+        <UseStateArray></UseStateArray>
         {/* <h1>{iv}</h1>
     
         <button   onClick={changeName}> Click Me</button> */}

@@ -13,12 +13,22 @@ const UseStateObjects=()=>{
         })
     }
 
+    const List=()=>{
+        return(
+            <div>
+            <h1> Name : {initial.name} Age: {initial.age} gender:{initial.degree} <button onClick={changeVals}>Click M</button> </h1>
+            
+        </div>    
+        )
+    }
+
     // just to change age in initial objects
     return(
-        <div>
-            <h1> Name : {initial.name} Age: {initial.age} gender:{initial.degree}</h1>
-            <button onClick={changeVals}>Click M</button>
-        </div>
+        <>
+        <List></List>
+        <List></List>
+        
+        </>
     )
 }
 
