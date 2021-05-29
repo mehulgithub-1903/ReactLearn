@@ -2,7 +2,7 @@ import React from 'react'
 import './index.css'
 
 
-import UseStateArray from './components/UseStateArray'
+import ShortCirEval from './components/ShortCirEval'
 
 
 const App =()=>{
@@ -17,7 +17,7 @@ const App =()=>{
     
     return(
         <>
-        <UseStateArray></UseStateArray>
+        <ShortCirEval></ShortCirEval>
         {/* <h1>{iv}</h1>
     
         <button   onClick={changeName}> Click Me</button> */}
