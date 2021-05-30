@@ -1,25 +1,28 @@
-import React,{useState} from 'react'
-import "./index.css"
-const App = () => { 
+import React ,{useState}from 'react'
 
-    // const color="yellow"
+const App = () => {
 
-    const [bg, setbg] = useState("yellow");
-    const [text, settext] = useState("Hello");
-    const Uc=()=>{
-        setbg("green")
+    
+    const [greet, setgreet] = useState("Hello");
+
+    const [fname, setfname] = useState()
+
+    const ChangeInput=(event)=>{
+        console.log(event.target.value);
+        setgreet(event.target.value); 
     }
-    const Ut=()=>{
-        settext("Hey 😄")
-        setbg("Grey")
+
+    // here event is onchange target is input and value is the value of the input
+    const ChangeValue=(event)=>{
+        setfname(greet)
+       
     }
-    const Rt=()=>{
-        settext("Hello")
-        setbg("yellow")
-    }
+    
     return (
         <div>
-            <button  onMouseOver={()=>Ut()} onMouseOut={()=>Rt()}   onClick={()=>Uc()}  style={{backgroundColor :bg}}>{text}</button>
+            <h1> Hello {fname}</h1>
+            <input type="text" placeholder="Enter Your Name" onChange={ChangeInput} value={greet}/> 
+            <button onClick={ChangeValue}>Submit</button>  
         </div>
     )
 }
