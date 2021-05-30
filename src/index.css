@@ -1,5 +1,15 @@
 
+button{
+  padding: 12px ,20px;
+  background: yellow;
+  color: red;
+  border: 2px solid blue;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
 
+}
 /*
 h1{s
   padding: 5px;
