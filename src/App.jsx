@@ -30,34 +30,38 @@ const App = () => {
         if(name==="loginId")
         {
             return{
+                ...cred,
                 loginId:value,
-                password:preVal.password,
-                email:preVal.email,
-                phone:preVal.phone,
+                // password:preVal.password,
+                // email:preVal.email,
+                // phone:preVal.phone,
             }
         }
         
         else if(name==="password"){
             return{
-                loginId:preVal.loginId,
+                ...cred,
+                //loginId:preVal.loginId,
                 password:value,
-                email:preVal.email,
-                phone:preVal.phone,
+                // email:preVal.email,
+                // phone:preVal.phone,
             }
     
         }else if(name==="email"){
             return{
-                loginId:preVal.loginId,
-                password:preVal.password,
-                email:value,
-                phone:preVal.phone,
+                ...cred,
+                // loginId:preVal.loginId,
+                // password:preVal.password,
+                 email:value,
+                // phone:preVal.phone,
             }
     
         }else if(name==="phone"){
             return{
-                loginId:preVal.loginId,
-                password:preVal.password,
-                email:preVal.email,
+                ...cred,
+                        // loginId:preVal.loginId,
+                        // password:preVal.password,
+                        // email:preVal.email,
                 phone:value
             }
     
