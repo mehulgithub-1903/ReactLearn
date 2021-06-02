@@ -9,63 +9,24 @@ const App = () => {
         email:"",
         phone:"",
     });  
-    //  const [credO, setcredO] = useState({
-    //     loginId:"",
-    //     password:"",
-    //     email:"",
-    // });
+   
  const runForm=(event)=>{
        event.preventDefault()
-    //    setcredO({
-    //     loginId:cred.loginId,
-    //     password:cred.password,
-    //     email:cred.email,
-    //    })
+    
     }
     const ChangeInput=(event)=>{
       const {value,name}=event.target;
          
             setcred((preVal)=>{
-                
-        if(name==="loginId")
-        {
-            return{
-                ...cred,
-                loginId:value,
-                // password:preVal.password,
-                // email:preVal.email,
-                // phone:preVal.phone,
-            }
-        }
-        
-        else if(name==="password"){
-            return{
-                ...cred,
-                //loginId:preVal.loginId,
-                password:value,
-                // email:preVal.email,
-                // phone:preVal.phone,
-            }
-    
-        }else if(name==="email"){
-            return{
-                ...cred,
-                // loginId:preVal.loginId,
-                // password:preVal.password,
-                 email:value,
-                // phone:preVal.phone,
-            }
-    
-        }else if(name==="phone"){
-            return{
-                ...cred,
-                        // loginId:preVal.loginId,
-                        // password:preVal.password,
-                        // email:preVal.email,
-                phone:value
-            }
-    
-        }
+                return{
+                    ...preVal,
+                    [name]:value,
+                }
+       /*
+       The square bracket is used to get the name of the event target and set the value to the state. 
+       For example, if the email field is changed - it fetches the email value and 
+       sets it to the state (state object/email value) and does the same to the password as well.
+       */
             })
         
     }
