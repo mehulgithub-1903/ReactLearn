@@ -8,6 +8,7 @@ const App = () => {
         password:"",
         email:"",
         phone:"",
+        lastName:"",
     });  
    
  const runForm=(event)=>{
@@ -43,6 +44,7 @@ const App = () => {
                 <li>{cred.password}</li>
                 <li>{cred.email}</li>
                 <li>{cred.phone}</li>
+                <li>{cred.lastName}</li>
             </ol>
             <input name="loginId" type="text" placeholder="Enter Your Name" onChange={ChangeInput} value={cred.loginId} /> 
             <br />
@@ -53,6 +55,9 @@ const App = () => {
             } /> 
             <br />
             <input name="phone" type="number" placeholder="Enter Your phone" onChange={ChangeInput} value={cred.phone
+            } /> 
+            <br />
+            <input name="lastName" type="text" placeholder="Enter Your lastName" onChange={ChangeInput} value={cred.lastName
             } /> 
             <br />
             <button type="submit">Submit</button>
