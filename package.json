@@ -9,6 +9,9 @@
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
     "react": "^17.0.2",
+    "react-clock": "^3.0.0",
+    "react-countdown": "^2.3.2",
+    "react-digital-clock": "^0.1.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.1"
@@ -36,5 +39,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/mehulgithub-1903/ReactLearn.git",
+  "author": "Mehul Porwal <mehulporwal9999@gmail.com>",
+  "license": "MIT"
 }
