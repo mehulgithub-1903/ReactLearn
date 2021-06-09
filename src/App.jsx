@@ -1,48 +1,41 @@
-import React, {useState} from 'react'
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-
+import React,{useState} from 'react'
+import Header from './Header'
+import Footer from './Footer'
+import CreateNote from './CreateNote'
+import Note from './Note'
 
 const App = () => {
 
-    return (
-        <>
-        <h1>Welcome to my react page </h1>
-        <button className="btn btn-primary">CLick Me</button>
-        <div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon1">@</span>
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"/>
-</div>
+ const [AllTask, setAllTask] = useState([])
+const added=(note)=>{
+  setAllTask((prev)=>{
+    return [...prev,note]
+  })
+}
 
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-  <span class="input-group-text" id="basic-addon2">@example.com</span>
-</div>
+const del=(key)=>{
+setAllTask((prev)=>{
+  return prev.filter((e,index)=>{
+    return key!==index
+  })
+})
+}
 
-<label for="basic-url" class="form-label">Your vanity URL</label>
-<div class="input-group mb-3">
-  <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3"/>
-</div>
-
-<div class="input-group mb-3">
-  <span class="input-group-text">$</span>
-  <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" />
-  <span class="input-group-text">.00</span>
-</div>
-
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Username" aria-label="Username"/>
-  <span class="input-group-text">@</span>
-  <input type="text" class="form-control" placeholder="Server" aria-label="Server"/>
-</div>
-
-<div class="input-group">
-  <span class="input-group-text">With textarea</span>
-  <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
-        </>
-
-    )
+  return (
+    <div>
+      <Header></Header>
+      
+      <CreateNote passNote={added}></CreateNote>
+      {AllTask.map((e,index)=>{
+        return( 
+          <>
+          <Note ind={index} deleteItem={del} title={e.title} content={e.content}/>
+          </>
+        )
+      })}
+      <Footer></Footer>
+    </div>
+  )
 }
 
 export default App
