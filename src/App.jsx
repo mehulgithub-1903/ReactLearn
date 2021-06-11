@@ -1,21 +1,36 @@
-import React, { createContext } from 'react'
-import ComA from './ComA'
-
-
-const FirstName=createContext();
-const LastName=createContext();
+import React,{useState,useEffect} from 'react'
 
 const App = () => {
-  return (
-    <div>
-        <FirstName.Provider value={"Mehul"}>
-        <LastName.Provider value={"Porwal"}>
-        <ComA/>
-        </LastName.Provider>
-        </FirstName.Provider>
-    </div>
-  )
+
+
+    const [name, setName] = useState(0);
+    const [num, setNum] = useState(0)
+     useEffect(()=>{
+         alert("Hello")
+        })
+
+        /*use effect gets triggered after render function in index
+            useEffect(()=>{
+                alert("Hello")
+                },[])
+        --> sirf pheli baar render hone pe useEffect Chalega 
+            useEffect(()=>{
+                alert("Hello")
+                },[num])
+        --> num ki value change hone pe hi chalega 
+
+        */
+    
+    return (
+        <div>
+        <button onClick={()=>{
+            setName(name+1)
+        }}>Click me {name}</button>
+         <button onClick={()=>{
+            setNum(num+1)
+        }}>Click me {num}</button>
+        </div>
+    )
 }
 
 export default App
-export {FirstName,LastName}
