@@ -1,22 +1,32 @@
-import React,{useState,useEffect} from 'react'
+import React from 'react'
+import {Route,Switch} from 'react-router-dom'
+import AboutUs from './AboutUs'
+import Contact from './Contact'
+import Menu from './Menu'
 
 const App = () => {
 
+    const base=()=>{
+        return <h1>This is base page</h1>
+    }
 
-   
-    const [num, setNum] = useState(0)
-   
-    useEffect(()=>{
-        document.title=`You clicked me ${num} times`
-    })
+    const ErrorPage=()=>{
+        return <h1>This is  ErrorPage page</h1>
+    }
     return (
         <div>
-        <button onClick={()=>{
-            setNum(num+1)
-        }}>Click me {num}</button>
-        
+        <Menu></Menu>
+            <Switch>
+                <Route exact path="/" component={base}/>
+                <Route path="/contact" component={Contact}/>
+                <Route path="/About" component={AboutUs}/>
+                <Route  component={ErrorPage}/>
+                
+            </Switch>
         </div>
     )
 }
+
+//switch is used to see the first path which is encountered 
 
 export default App
