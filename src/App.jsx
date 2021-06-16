@@ -3,7 +3,7 @@ import {Route,Switch} from 'react-router-dom'
 import AboutUs from './AboutUs'
 import Contact from './Contact'
 import Menu from './Menu'
-
+import User from './User'
 const App = () => {
 
     const base=()=>{
@@ -18,8 +18,9 @@ const App = () => {
         <Menu></Menu>
             <Switch>
                 <Route exact path="/" component={base}/>
-                <Route path="/contact" component={Contact}/>
+                <Route path="/contact" render={()=><Contact name="Mehul Porwal"/>}/>
                 <Route path="/About" component={AboutUs}/>
+                <Route path="/user/:fname/:lname" component={User}></Route>
                 <Route  component={ErrorPage}/>
                 
             </Switch>
@@ -28,5 +29,6 @@ const App = () => {
 }
 
 //switch is used to see the first path which is encountered 
-
+// we can use render instead of component as render calls the function only of it 
+// it is updated but component always calls the function
 export default App
