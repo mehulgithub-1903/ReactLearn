@@ -5,6 +5,7 @@ const Menu = () => {
         <div>
          <NavLink style={{textDecoration:"none"}} excat activeClassName="active_class"     to="/About">About us</NavLink>
          <NavLink  style={{textDecoration:"none"}} excat activeClassName="active_class"  to="/contact">Contact Us</NavLink>
+         <NavLink  style={{textDecoration:"none"}} excat activeClassName="active_class"  to="/user">User</NavLink>
         </div>
     )
 }
